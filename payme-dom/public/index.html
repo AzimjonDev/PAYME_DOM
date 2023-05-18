@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./syule.css">
+    <title>PAYME-DOM</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body>
+
+<!-- LoginIn and LoginUp pages... -->
+    <div class="container">
+        <form class="signIn">
+            <h1>Sign In</h1>
+            <p id="signInNumberText"></p>
+            <input class="signInNumber inputSignInNumber" type="text" placeholder="Enter your number" required>
+            <input class="signInPassword inputSignInPassword" type="text" placeholder="Enter your password" required>
+            <button type="button" id="signIn">Sign In</button>
+        </form>
+        <form class="signUp">
+            <h1>Sign Up</h1>
+            <p id="signUpNumberText"></p>
+            <input class="signUpName inputSignUpName inputAll" type="text" placeholder="Enter your name" required>
+            <input class="signUpSurname inputSignUpSurname inputAll" type="text" placeholder="Enter your surname" required>
+            <input class="signUpNumber inputSignUpNumber inputAll" type="text" placeholder="Enter your number" required>
+            <input class="signUpPassword inputSignUpPassword inputAll" type="text" placeholder="Enter your password" required>
+            <button type="button" id="signUp">Sign Up</button>
+        </form>
+    </div>
+    <!-- ====================================================== -->
+    
+    <!-- Card-register page -->
+    <div class="card-register-container">
+        <div class="navbar">
+            <div class="fullName">
+                <i class='bx bxs-user-pin'></i> <h1 id="name"> Name </h1> <span id="surname">Surname</span>
+            </div>
+            <ul>
+                <li><a class="transaction" href="###">Transaction</a></li>
+                <li><a class="log-out" href="###">Log-out  <i class='bx bx-log-out'></i></li></a> 
+            </ul>
+        </div>
+        <br>
+        <hr>
+        <br>
+        <div class="container-card">
+            <div class="cards">
+                <div class="card">
+                    <div class="cardAbaut">
+                        <h1 class="cardTypes">----</h1>
+                        <h3 class="cardNumbers">xxxx-xxxx-xxxx-xxxx</h3>
+                        <p class="cardDates">00/00</p>
+                        <div class="userNames">
+                            <h4 class="usersName">Name </h4> <h4 class="usersSurname">surname</h4>
+                        </div>
+                    </div>
+                    <i class='bx bxs-barcode'></i>
+                </div>
+            </div>
+            
+            <form id="addcard-form" class="add-card">
+            <h1>Add card</h1>
+                <p id="addCardText"></p>
+                <input class="addInput yourName" type="text" placeholder="Enter your name">
+                <input class="addInput yourSurname" type="text" placeholder="Enter your surname">
+                <input class="addInput cardType" type="text" placeholder="Enter card type">
+                <input class="addInput cardNumber" type="number" placeholder="Enter your card number">
+                <input class="addInput cardPassword" type="text" placeholder="Enter your password">
+                <input class="addInput cardDate" type="text" placeholder="Enter your card date">
+                <button class="add-btn">Add Card</button>
+            </form>
+        </div>
+    </div>
+
+</body>
+<script type="module" src="../dist/index.js"></script>
+</html>

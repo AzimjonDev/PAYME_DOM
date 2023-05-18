@@ -1,0 +1,195 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;800;900&display=swap);
+
+body {
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.container{
+    display: flex;
+    gap: 30px;
+}
+
+.signIn h1, .signUp h1{
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+
+.container .signIn, .signUp{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    padding: 40px 50px;
+    width: 400px;
+    height: 600px;
+    border: 2px solid;
+    border-radius: 5px;
+}
+.signIn input, .signUp input{
+    width: 100%;
+    padding: 10px 30px;
+    border-radius: 10px;
+    font-size: 18px;
+    border: 1px solid #ccc;
+}
+
+p{
+    font-size: 14px;
+    
+}
+
+.signIn input:focus, .signUp input:focus{
+    outline: 1px solid #ccc;
+}
+
+.signIn button, .signUp button{
+    margin-top: 20px;
+    padding: 10px 40px;
+    font-size: 18px;
+    border-radius: 10px;
+    border: none;
+    background-color: green;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.signIn button:active, .signUp button:active{
+    transform: scale(1.1);
+}
+
+/* =============================================== */
+
+.card-register-container{
+    padding: 30px 50px;
+    width: 100%;
+    height: 100vh;
+}
+
+.card-register-container .navbar{
+    display: flex;
+    justify-content: space-between;
+}
+.navbar .fullName{
+    display: flex; gap: 10px;
+}
+.navbar .fullName h1,span, i{
+    font-size: 40px;
+    font-weight: 600;
+}
+.navbar i{
+    color: green;
+}
+.navbar ul{
+    display: flex;
+    gap: 40px;
+}
+.navbar ul li{
+    list-style: none;
+}
+.navbar ul li i{
+    color: #000;
+    font-size: 30px;
+}
+.navbar ul li a{
+    text-decoration: none;
+    font-size: 28px;
+    color: #000;
+}
+.card-register-container{
+    display: none;
+}
+
+.card-register-container .card{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 2px solid;
+    padding: 30px ;
+    border-radius: 10px;
+    width: 450px;
+    height: 250px;
+}
+.container-card{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.cards{
+    width: 500px;
+    height: 750px;
+    gap: 30px;
+    overflow-y: scroll;
+}
+
+.card i{
+    font-size: 60px;
+    color: orange;
+}
+.card h1{
+    margin-bottom: 20px;
+    font-size: 45px;
+    font-weight: 200;
+}
+.card p{
+    margin-top: 20px;
+    font-size: 18px;
+}
+.card h3{
+    font-size: 30px;
+    font-weight: 400;
+}
+.userNames{
+    display: flex;
+    gap: 30px;
+}
+.userNames h4{
+    margin-top: 40px;
+    font-size: 30px;
+    font-weight: 600;
+}
+.add-card{
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px;
+    height: 600px;
+    border: 2px solid;
+}
+.add-card input{
+    width: 100%;
+    border-radius: 10px;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    padding: 10px 40px;
+    margin-top: 20px;
+}
+.add-card input:focus{
+    outline: 1px solid #ccc;
+}
+.add-card .add-btn{
+    margin-top: 30px;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 10px;
+    background-color: green;
+    color: #fff;
+    font-size: 18px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.add-card .add-btn:active{
+    transform: scale(1.1);
+}
+/* =============================== */
